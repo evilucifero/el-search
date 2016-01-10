@@ -1,0 +1,20 @@
+.initial {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -80px 0 0 -250px;
+  text-align: center;
+
+  .title-area {
+    .title {
+      font-size: 40px;
+      color: #3cc;
+    }
+    
+    .subtitle {
+      color: #999;
+      font-size: 20px;
+      margin-left: 20px;
+    }
+  }
+}

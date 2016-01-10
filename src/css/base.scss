@@ -1,0 +1,41 @@
+body {
+  background-color: #333;
+  font-family: "Lucida Console", Monaco, monospace;
+  margin: 0;
+}
+
+input {
+  width: 400px;
+  background: transparent;
+  border: 2px solid #999;
+  border-radius: 6px;
+  line-height: 30px;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Lucida Console", Monaco, monospace;
+  padding-left: 12px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+a.btn:link, a.btn:visited, a.btn:hover, a.btn:active {
+  color: #999;
+  text-decoration:none;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px 16px;
+  border: 2px solid #999;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-left: 20px;
+  width: 80px;
+  font-size: 16px;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+a.btn:hover, a.btn:active {
+  color: #3cc;
+  border: 2px solid #3cc;
+}

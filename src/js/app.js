@@ -1,7 +1,5 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
-import Curve from './Curve';
-
+import SearchIndex from './SearchIndex';
 require('../css/app.scss');
 
-ReactDOM.render((<Curve />), document.getElementById('main'));
+ReactDOM.render((<SearchIndex />), document.getElementById('main'));

@@ -1,9 +1,3 @@
-body {
-  background: #666;
-}
-h1 {
-  color: #0cc;
-}
-p {
-  color: #ccc;
-}
+@import "./base.scss";
+@import "./initial.scss";
+@import "./result.scss";
