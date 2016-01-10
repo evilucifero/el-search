@@ -6,4 +6,4 @@ gulp-cache
 .DS_Store
 Thumbs.db
 .publish
-/build
+/client/demo/build
