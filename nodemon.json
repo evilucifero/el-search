@@ -1,0 +1,13 @@
+{
+  "verbose": true,
+  "execMap": {
+    "js": "node --use_strict"
+  },
+  "watch": [
+    "server"
+  ],
+  "env": {
+    "BABEL_ENV": "node"
+  },
+  "ext": "js,jsx,ejs,scss,json"
+}
