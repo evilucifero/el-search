@@ -27,26 +27,18 @@ export default React.createClass({
         isInitial: false,
         isLoading: true
       });
-      fetch(
-        '/search?keyword=' + encodeURIComponent(keyword), { method: 'GET' }
-      ).then((response) => {
-        setTimeout(()=>{
+      fetch('/search?keyword=' + encodeURIComponent(keyword), {
+        method: 'GET'
+      }).then(response => response.json())
+        .then(data => {
           this.setState({
             isLoading: false,
-            result: [
-              { title: keyword + 'sdqwuncebuwrvwoc', url: 'dqwnuifenfi', summary: keyword + 'ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq 千山尿肥觉烷烃仁宗咩ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ' },
-              { title: keyword + 'sdqwuncebuwrvwoc', url: 'dqwnuifenfi', summary: keyword + 'ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq 千山尿肥觉烷烃仁宗咩ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ' },
-              { title: keyword + 'sdqwuncebuwrvwoc', url: 'dqwnuifenfi', summary: keyword + 'ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq 千山尿肥觉烷烃仁宗咩ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ' },
-              { title: keyword + 'sdqwuncebuwrvwoc', url: 'dqwnuifenfi', summary: keyword + 'ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq 千山尿肥觉烷烃仁宗咩ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ' },
-              { title: keyword + 'sdqwuncebuwrvwoc', url: 'dqwnuifenfi', summary: keyword + 'ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq 千山尿肥觉烷烃仁宗咩ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ' },
-              { title: keyword + 'sdqwuncebuwrvwoc', url: 'dqwnuifenfi', summary: keyword + 'ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq 千山尿肥觉烷烃仁宗咩ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ffewijfewopq ' },
-            ],
+            result: data,
             summary: {
-              count: 6
+              count: data.length
             }
           });
-        }, 451);
-      })
+        });
     }
   },
 

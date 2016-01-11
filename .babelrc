@@ -2,9 +2,7 @@
   "ignore": [],
   "env": {
     "node": {
-      "presets": [
-        "es2015"
-      ],
+      "presets": [],
       "plugins": [
         "add-module-exports",
         "transform-es2015-modules-commonjs",
